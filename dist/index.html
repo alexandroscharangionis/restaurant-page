@@ -9,26 +9,36 @@
   </head>
   <body>
     <div id="content">
-      <header class="header">
-        <div class="header__logo">Logo</div>
-        <div class="header__tabs">
+      <header class="header flex">
+        <div class="header__logo flex">
+          <h1>sumosushi</h1>
+          <img src="../src/img/icons8-sushi-64.png" alt="" />
+        </div>
+        <div class="header__tabs flex">
           <button class="header__tabs--btn">Home</button>
           <button class="header__tabs--btn">Menu</button>
           <button class="header__tabs--btn">Contact</button>
         </div>
       </header>
-      <main class="main">
-        <p class="main__description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
-          aperiam ex quas sed libero necessitatibus eveniet laboriosam rerum
-          iusto inventore ipsam debitis nulla, eligendi hic eum asperiores.
-          Perspiciatis, dolorum consequuntur?
-        </p>
-        <p class="main__hours">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-          officiis officia! Aliquid at soluta enim deserunt consectetur magni
-          atque quo.
-        </p>
+      <main class="flex main">
+        <div class="main__description flex">
+          <p>
+            In 2005 it all started in Bucharest as a small and intimate Asian
+            restaurant that was one of the first to use the “all-you-can-eat
+            concept” and grew into an immensely popular formula.
+          </p>
+          <p>Today, sumosushi can be found throughout the world.</p>
+          <p>Enjoy a delicious Japanese & Asian lunch or dinner.</p>
+        </div>
+        <div class="main__hours flex">
+          <h2>hours:</h2>
+          <ul class="main__hours--list">
+            <li class="main__hours--list-title">mon-sat</li>
+            <li>12pm - 9pm</li>
+            <li class="main__hours--list-title">sun</li>
+            <li>no sumo no sushi</li>
+          </ul>
+        </div>
       </main>
     </div>
     <script src="./bundle.js"></script>

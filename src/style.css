@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -14,8 +16,11 @@ h2,
 h3,
 h4,
 h5,
-p figure,
-picture {
+p,
+figure,
+picture,
+ul,
+ol {
   margin: 0;
   padding: 0;
 }
@@ -23,10 +28,98 @@ picture {
 body {
   line-height: 1.5;
   min-height: 100vh;
+  font-size: 1.6rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
 }
 
 img,
 picture {
   max-width: 100%;
   display: block;
+}
+/* ------------------------------- */
+
+:root {
+  --fontSize-med: 2.2rem;
+  --fontSize-huge: 4rem;
+  --mainPara__content-width: 40%;
+  --pad-sm: 1em 2em;
+  --pad-med: 1em 4em;
+  --pad-big: 1em 6em;
+  --gap-xsm: 0.4em;
+  --gap-sm: 1em;
+  --gap-med: 2em;
+  --gap-big: 4em;
+  --mar-sm: 2em;
+  --border: 2px solid #000;
+}
+
+/* ------------------------------- */
+#content {
+  font-size: var(--fontSize-med);
+  border: var(--border);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  min-height: 15vh;
+  margin-bottom: var(--mar-sm);
+  border-bottom: var(--border);
+}
+
+.header__logo {
+  max-width: 40rem;
+  margin-right: auto;
+  gap: var(--gap-sm);
+  padding: var(--pad-big);
+}
+
+.header__tabs {
+  max-width: 40rem;
+  padding: var(--pad-big);
+  gap: var(--gap-sm);
+}
+
+.header__tabs--btn {
+  padding: var(--pad-sm);
+  font-family: inherit;
+}
+
+.main {
+  min-height: 75vh;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.main__description {
+  flex-direction: column;
+  width: 62ch;
+  margin-bottom: var(--mar-sm);
+  padding: var(--pad-med);
+  gap: var(--gap-xsm);
+}
+
+.main__hours {
+  width: 50%;
+  flex-direction: column;
+}
+
+.main__hours h2 {
+  font-size: var(--fontSize-huge);
+}
+
+.main__hours--list {
+  list-style: none;
+}
+.main__hours--list-title {
+  text-decoration-line: underline;
+  font-weight: 700;
 }
