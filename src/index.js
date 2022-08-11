@@ -1,6 +1,4 @@
 "use strict";
 
-import { ContextReplacementPlugin, LibManifestPlugin } from "webpack";
-import pageLoad from "./page-load";
-
+import pageLoad from "./page-load.js";
 // pageLoad();

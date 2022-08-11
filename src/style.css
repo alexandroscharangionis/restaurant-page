@@ -147,3 +147,29 @@ picture {
   text-decoration-line: underline;
   font-weight: 700;
 }
+
+.menu {
+  min-height: 75vh;
+  text-align: center;
+  background-color: var(--color-primary);
+  padding: var(--pad-med);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  gap: var(--gap-big);
+  justify-content: center;
+}
+
+.menu__item {
+  /* background-color: bisque; */
+  border: 1px solid #000;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+.menu__item img {
+  height: 20rem;
+  border-radius: 50%;
+}
