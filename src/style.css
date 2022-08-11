@@ -54,6 +54,7 @@ picture {
   --gap-sm: 1em;
   --gap-med: 2em;
   --gap-big: 4em;
+  --mar-xsm: 1em;
   --mar-sm: 2em;
   --border: 2px solid #000;
   --color-primary: #d5f2e3;
@@ -176,4 +177,20 @@ picture {
 .menu__item img {
   height: 20rem;
   border-radius: 50%;
+}
+
+.contact,
+.contact__box {
+  flex-direction: column;
+}
+
+.contact {
+  margin-top: var(--mar-sm);
+  padding: var(--pad-xbig);
+  gap: var(--gap-med);
+}
+
+.contact span {
+  font-weight: 700;
+  color: var(--color-secondary);
 }

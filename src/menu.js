@@ -1,16 +1,16 @@
 "use strict";
 import "../src/style.css";
-import { createEl } from "./generate-homepage";
+import { createEl } from "./homepage";
 
 const menu = {
-  1: "Salmon Dragon Roll - 8pcs",
-  2: "Tempura Shrimps Roll - 8pcs",
-  3: "Futomaki Tempura Philly - 5pcs",
-  4: "Avocado Shrimp Roll - 8pcs",
-  5: "Futomaki Tokyo Roll - 5pcs",
-  6: "Crunchy California Roll - 8pcs",
-  7: "Maki Tuna Mango - 8pcs",
-  8: "Sushi Wrap",
+  1: "salmon dragon roll - 8pcs",
+  2: "tempura shrimps roll - 8pcs",
+  3: "futomaki tempura philly - 5pcs",
+  4: "avocado shrimp roll - 8pcs",
+  5: "futomaki tokyo roll - 5pcs",
+  6: "crunchy california roll - 8pcs",
+  7: "maki tuna mango - 8pcs",
+  8: "sushi wrap",
 };
 
 export default function generateMenu() {

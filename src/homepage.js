@@ -11,7 +11,7 @@ export function generateHeader() {
   const logoName = createEl("h1");
   const logoImg = createEl("img");
   const tabsContainer = createEl("div");
-  const tabs = ["Home", "Menu", "Contact"];
+  const tabs = ["home", "menu", "contact"];
 
   header.classList.add("header", "flex");
   logoContainer.classList.add("flex", "header__logo");
@@ -38,11 +38,11 @@ export function generateMainContent() {
   const main = createEl("main");
   const mainDescription = createEl("div");
   const descriptionTxt = [
-    `In 2005 it all started in Bucharest as a small and intimate Asian
+    `in 2005 it all started in Bucharest as a small and intimate asian
   restaurant that was one of the first to use the “all-you-can-eat
   concept” and grew into an immensely popular formula.`,
-    `Today, sumosushi can be found throughout the world.`,
-    `Enjoy a delicious Japanese & Asian lunch or dinner.`,
+    `today, sumosushi can be found throughout the world.`,
+    `enjoy a delicious japanese & asian lunch or dinner.`,
   ];
   const hours = createEl("div");
   const hoursTitle = createEl("h2");
@@ -50,6 +50,7 @@ export function generateMainContent() {
   const hoursListItems = [`mon-sat`, `12pm - 9pm`, `sun`, `no sumo no sushi`];
 
   main.classList.add("flex", "main");
+  main.setAttribute("id", "main");
   mainDescription.classList.add("flex", "main__description");
   hours.classList.add("flex", "main__hours");
   hoursTitle.textContent = "hours:";
