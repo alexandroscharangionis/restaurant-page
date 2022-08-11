@@ -26,6 +26,7 @@ export function generateHeader() {
   tabs.forEach((item) => {
     const button = createEl("button");
     button.classList.add("header__tabs--btn");
+    button.setAttribute("id", `${item}`);
     button.textContent = item;
     tabsContainer.appendChild(button);
   });

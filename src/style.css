@@ -87,9 +87,12 @@ picture {
   cursor: pointer;
 }
 
-.header__logo:hover,
+.header__logo:hover {
+  transform: scale(1.03);
+}
+
 .header__logo:active {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .header__tabs {
@@ -109,10 +112,13 @@ picture {
   transition: all 0.2s;
   cursor: pointer;
 }
-.header__tabs--btn:hover,
-.header__tabs--btn:active {
+.header__tabs--btn:hover {
   color: var(--color-secondary);
   transform: scale(1.06);
+}
+
+.header__tabs--btn:active {
+  transform: scale(1.01);
 }
 
 .main {
@@ -163,8 +169,6 @@ picture {
 }
 
 .menu__item {
-  /* background-color: bisque; */
-  border: 1px solid #000;
   flex-direction: column;
   gap: var(--gap-sm);
 }

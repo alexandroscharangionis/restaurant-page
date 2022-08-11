@@ -1,5 +1,5 @@
 "use strict";
-
+import "../src/style.css";
 import { createEl } from "./generate-homepage";
 
 const menu = {
@@ -28,8 +28,8 @@ export default function generateMenu() {
     itemTitle.textContent = `${menuItem}`;
 
     item.append(img, itemTitle);
-    main.appendChild(item);
+    mainMenu.appendChild(item);
   }
-
+  // content.appendChild(mainMenu);
   return mainMenu;
 }
