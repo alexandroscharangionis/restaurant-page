@@ -1,7 +1,7 @@
 "use strict";
 import "../src/style.css";
 
-function createEl(element) {
+export function createEl(element) {
   return document.createElement(element);
 }
 
