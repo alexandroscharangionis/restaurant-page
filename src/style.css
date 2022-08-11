@@ -42,18 +42,22 @@ picture {
 /* ------------------------------- */
 
 :root {
+  --fontSize-sm: 1.8rem;
   --fontSize-med: 2.2rem;
   --fontSize-huge: 4rem;
   --mainPara__content-width: 40%;
   --pad-sm: 1em 2em;
   --pad-med: 1em 4em;
   --pad-big: 1em 6em;
+  --pad-xbig: 3em 6em;
   --gap-xsm: 0.4em;
   --gap-sm: 1em;
   --gap-med: 2em;
   --gap-big: 4em;
   --mar-sm: 2em;
   --border: 2px solid #000;
+  --color-primary: #d5f2e3;
+  --color-secondary: #ba2d0b;
 }
 
 /* ------------------------------- */
@@ -70,7 +74,7 @@ picture {
 
 .header {
   min-height: 15vh;
-  margin-bottom: var(--mar-sm);
+  /* margin-bottom: var(--mar-sm); */
   border-bottom: var(--border);
 }
 
@@ -79,17 +83,36 @@ picture {
   margin-right: auto;
   gap: var(--gap-sm);
   padding: var(--pad-big);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.header__logo:hover,
+.header__logo:active {
+  transform: scale(1.02);
 }
 
 .header__tabs {
-  max-width: 40rem;
-  padding: var(--pad-big);
-  gap: var(--gap-sm);
+  max-width: 60vw;
+  padding: var(--pad-sm);
+  gap: var(--gap-med);
 }
 
 .header__tabs--btn {
   padding: var(--pad-sm);
   font-family: inherit;
+  font-size: var(--fontSize-sm);
+  font-weight: 700;
+  border: none;
+  border-radius: 1rem;
+  background-color: transparent;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.header__tabs--btn:hover,
+.header__tabs--btn:active {
+  color: var(--color-secondary);
+  transform: scale(1.06);
 }
 
 .main {
@@ -97,13 +120,14 @@ picture {
   flex-direction: column;
   text-align: center;
   justify-content: flex-start;
+
+  background-color: var(--color-primary);
 }
 
 .main__description {
   flex-direction: column;
   width: 62ch;
-  margin-bottom: var(--mar-sm);
-  padding: var(--pad-med);
+  padding: var(--pad-xbig);
   gap: var(--gap-xsm);
 }
 
