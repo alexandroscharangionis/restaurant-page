@@ -1,6 +1,6 @@
 "use strict";
 import "../src/style.css";
-// import logoIcon from "./img/icons8-sushi-64.png";
+import logoIcon from "./img/icons8-sushi-64.png";
 
 export function createEl(element) {
   return document.createElement(element);
@@ -19,9 +19,9 @@ export function generateHeader() {
   logoContainer.classList.add("flex", "header__logo");
   logoName.textContent = "sumosushi";
   logoImg.setAttribute("id", "logoImage");
-  document.getElementById("logoImage").src = "img/icons8-sushi-64.png";
+  // document.getElementById("logoImage").src = "img/icons8-sushi-64.png";
   // logoImg.src = "img/icons8-sushi-64.png";
-  // logoImg.src = logoIcon;
+  logoImg.src = logoIcon;
   logoImg.alt = "logo";
   tabsContainer.classList.add("flex", "header__tabs");
 
