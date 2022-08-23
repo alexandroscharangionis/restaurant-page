@@ -2,6 +2,20 @@
 import "../src/style.css";
 import { createEl } from "./homepage";
 
+// ----------------------------------------------------------------------------------
+// FUNCTION THAT IMPORTS ALL IMAGES FROM IMG FOLDER AND RETURNS THEM INTO OBJECT
+
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => {
+    images[item.replace("./", "")] = r(item);
+  });
+  return images;
+}
+const images = importAll(require.context("./img", false, /\.(png|jpe?g|svg)$/));
+
+// ----------------------------------------------------------------------------------
+
 const menu = {
   1: "salmon dragon roll - 8pcs",
   2: "tempura shrimps roll - 8pcs",
@@ -23,7 +37,7 @@ export default function generateMenu() {
     const itemTitle = createEl("h3");
 
     item.classList.add("flex", "menu__item");
-    img.src = `../src/img/${key}.png`;
+    img.src = images[`${key}.png`];
     img.alt = `${menuItem}`;
     itemTitle.textContent = `${menuItem}`;
 
