@@ -16,7 +16,7 @@ export function generateHeader() {
   header.classList.add("header", "flex");
   logoContainer.classList.add("flex", "header__logo");
   logoName.textContent = "sumosushi";
-  logoImg.src = "../src/img/icons8-sushi-64.png";
+  logoImg.src = "img/icons8-sushi-64.png";
   logoImg.alt = "logo";
   tabsContainer.classList.add("flex", "header__tabs");
 
