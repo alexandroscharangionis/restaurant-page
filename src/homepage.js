@@ -1,6 +1,6 @@
 "use strict";
 import "../src/style.css";
-import logoIcon from "./img/icons8-sushi-64.png";
+import logoIcon from "./img/logo.png";
 
 export function createEl(element) {
   return document.createElement(element);
@@ -11,7 +11,6 @@ export function generateHeader() {
   const logoContainer = createEl("div");
   const logoName = createEl("h1");
   const logoImg = createEl("img");
-  // const logoImg = new Image();
   const tabsContainer = createEl("div");
   const tabs = ["home", "menu", "contact"];
 
@@ -19,8 +18,6 @@ export function generateHeader() {
   logoContainer.classList.add("flex", "header__logo");
   logoName.textContent = "sumosushi";
   logoImg.setAttribute("id", "logoImage");
-  // document.getElementById("logoImage").src = "img/icons8-sushi-64.png";
-  // logoImg.src = "img/icons8-sushi-64.png";
   logoImg.src = logoIcon;
   logoImg.alt = "logo";
   tabsContainer.classList.add("flex", "header__tabs");
